@@ -6,21 +6,33 @@ import { AppComponent } from './app.component';
 import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './views/home/home.component';
+import { SearchComponent } from './views/search/search.component';
+import { SettingsComponent } from './views/settings/settings.component';
 
 const appRoutes: Routes = [
-  //{ path: 'crisis-center', component: CrisisListComponent },
-  //{ path: 'heroes', component: HeroListComponent },
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'search', component: SearchComponent },
+  { path: 'settings', component: SettingsComponent },
 ];
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    BottomNavComponent
+    BottomNavComponent,
+    HomeComponent,
+    SearchComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
