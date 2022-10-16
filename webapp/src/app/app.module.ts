@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BottomNavComponent } from './bottom-nav/bottom-nav.component';
+import { BottomNavComponent } from './components/bottom-nav/bottom-nav.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
