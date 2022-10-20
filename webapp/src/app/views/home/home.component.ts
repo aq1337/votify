@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Song } from 'src/app/data/song';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
+  song: Song = {
+    id: 1,
+    title: "Doomsday",
+    interpreter: "Architects"
+  }
 
   constructor() { }
 
