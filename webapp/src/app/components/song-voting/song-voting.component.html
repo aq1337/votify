@@ -1,4 +1,4 @@
-<div class="flex-row border">
+<!-- <div class="flex-row border">
     <img src="{{song.picture}}">
     <div class="song-div">
         <p class="normal-text">{{song.title | uppercase}}</p>
@@ -11,4 +11,22 @@
     </div>
     
     
+</div> -->
+<div class="flex-container">
+    <div class="left-container">
+        <img src="{{song.picture}}" class="song-img">
+        <div class="song-div">
+            <p class="normal-text">{{song.title | uppercase}}</p>
+            <p class="sub-text">{{song.interpreter}}</p>
+        </div>
+    </div>
+    <div class="right-container">
+        <button class="">
+            <img src="../../../assets/down.svg" alt="">
+        </button>
+        <p class="">{{song.votes}}</p>
+        <button>
+            <img src="../../../assets/up.svg" alt="">
+        </button>
+    </div>
 </div>
