@@ -10,6 +10,7 @@ import { HomeComponent } from './views/home/home.component';
 import { SearchComponent } from './views/search/search.component';
 import { SettingsComponent } from './views/settings/settings.component';
 import { SongBasicComponent } from './components/song-basic/song-basic.component';
+import { SongVotingComponent } from './components/song-voting/song-voting.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     HomeComponent,
     SearchComponent,
     SettingsComponent,
-    SongBasicComponent
+    SongBasicComponent,
+    SongVotingComponent
   ],
   imports: [
     BrowserModule,

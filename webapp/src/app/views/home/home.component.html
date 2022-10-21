@@ -13,5 +13,16 @@
     </div>
     <div class="small-margin">
         <h2 class="title-text title-margin">in Bewertung</h2>
+        <ng-container *ngIf="songs.length > 0">
+            <div *ngFor="let song of songs"  class="margin-top-bottom">
+                <app-song-voting [song]="song"></app-song-voting>
+            </div>
+        </ng-container>
+        <div *ngIf="songs.length === 0">
+            <p>Es wurde noch kein Song vorgeschlagen. Sei der erste </p>
+        </div>
+        <div class="addSong">
+            +
+        </div>
     </div>
 </div>

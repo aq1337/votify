@@ -3,4 +3,5 @@ export interface Song {
     title: string;
     interpreter: string;
     picture: string;
+    votes: number;
   }

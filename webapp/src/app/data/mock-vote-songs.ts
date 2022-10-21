@@ -13,13 +13,13 @@ export const SONGS: Song[] = [
         title: "Animals",
         interpreter: "Architects",
         picture:"https://i.scdn.co/image/ab67616d00004851c78b2edbc9407cea20ccfb9f",
-        votes: 0
+        votes: 3
     },
     {
         id: 3,
         title: "Best Day",
         interpreter: "Electric Callboy",
         picture:"https://i.scdn.co/image/ab67616d00004851f5892e39a828e93ba6fb6009",
-        votes: 0
+        votes: 1
     }
 ]

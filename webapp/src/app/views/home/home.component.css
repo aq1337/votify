@@ -9,3 +9,14 @@ img{
 .margin-top-bottom{
     margin: 10px;
 }
+
+.addSong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1000;
+    font-size: 50px;
+    border: 1px dashed #a7a7a7;
+    border-radius: 30px;
+    margin-top: 30px;
+}
