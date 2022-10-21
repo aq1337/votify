@@ -1,12 +1,8 @@
 <div>
     <div class="small-margin">
         <h2 class="title-text title-margin">Warteschlange</h2>
-        <div class="flex-row">
-            <img src="https://i.scdn.co/image/ab67616d000048518c2c75859673d2f07eb8d3e9">
-            <div class="song-div">
-                <p class="normal-text">{{song.title | uppercase}}</p>
-                <p class="sub-text">{{song.interpreter}}</p>
-            </div>
+        <div *ngFor="let song of songs" class="margin-top-bottom">
+            <app-song-basic [song]="song"></app-song-basic>
         </div>
     </div>
     <div class="small-margin">

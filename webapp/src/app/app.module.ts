@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
 import { SearchComponent } from './views/search/search.component';
 import { SettingsComponent } from './views/settings/settings.component';
+import { SongBasicComponent } from './components/song-basic/song-basic.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
     BottomNavComponent,
     HomeComponent,
     SearchComponent,
-    SettingsComponent
+    SettingsComponent,
+    SongBasicComponent
   ],
   imports: [
     BrowserModule,
