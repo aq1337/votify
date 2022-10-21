@@ -9,11 +9,11 @@ import { SONGS } from 'src/app/data/mock-songs';
 })
 export class HomeComponent implements OnInit {
 
-  songs = SONGS;
-
+  songs:Song[] = SONGS;
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.songs)
   }
 
 }

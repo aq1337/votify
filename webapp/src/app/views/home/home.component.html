@@ -1,9 +1,15 @@
 <div>
     <div class="small-margin">
         <h2 class="title-text title-margin">Warteschlange</h2>
-        <div *ngFor="let song of songs" class="margin-top-bottom">
-            <app-song-basic [song]="song"></app-song-basic>
+        <ng-container *ngIf="songs.length > 0">
+            <div *ngFor="let song of songs"  class="margin-top-bottom">
+                <app-song-basic [song]="song"></app-song-basic>
+            </div>
+        </ng-container>
+        <div *ngIf="songs.length === 0">
+            <p>Derzeit sind keine Songs in der Warteschlange</p>
         </div>
+        
     </div>
     <div class="small-margin">
         <h2 class="title-text title-margin">in Bewertung</h2>
