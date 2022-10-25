@@ -38,3 +38,8 @@
 .small-margin{
     margin: 30px;
 }
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
