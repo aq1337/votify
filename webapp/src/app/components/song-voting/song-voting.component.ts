@@ -13,6 +13,12 @@ export class SongVotingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    let isPositiveVote = false
+    let isNegativeVote = false
+  }
+
+  onVote(){
+    console.log(event)
   }
 
 }
