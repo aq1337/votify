@@ -12,13 +12,32 @@ export class SongVotingComponent implements OnInit {
 
   constructor() { }
 
+  isNegativeVote: boolean | null = null;
+  isPositiveVote: boolean | null = null;
+
   ngOnInit(): void {
-    let isPositiveVote = false
-    let isNegativeVote = false
+    
   }
 
-  onVote(){
-    console.log(event)
+  onVote(id:string){
+    switch(id){
+      case "dvE":
+        this.isNegativeVote = true;
+        this.isPositiveVote = false;
+        break;
+      case "dvF":
+        this.isNegativeVote = false;
+        this.isPositiveVote = false;
+        break;
+      case "uvF":
+        this.isNegativeVote = false;
+        this.isPositiveVote = false;
+        break;
+      case "uvE":
+        this.isNegativeVote = false;
+        this.isPositiveVote = true;
+        break;
+    }
   }
 
 }
