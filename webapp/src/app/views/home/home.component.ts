@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Song } from 'src/app/data/song';
 import { SONGS } from 'src/app/data/mock-songs';
+import { ServerApiService } from 'src/app/shared/server-api.service';
 
 @Component({
   selector: 'app-home',
@@ -10,10 +11,12 @@ import { SONGS } from 'src/app/data/mock-songs';
 export class HomeComponent implements OnInit {
 
   songs:Song[] = SONGS;
-  constructor() { }
+  constructor(public rest: ServerApiService) { }
 
   ngOnInit(): void {
-    console.log(this.songs)
+    this.rest.getSongs().subscribe((data:{}) =>{
+      this.songs = data;
+    }) 
   }
 
 }

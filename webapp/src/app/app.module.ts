@@ -11,6 +11,7 @@ import { SearchComponent } from './views/search/search.component';
 import { SettingsComponent } from './views/settings/settings.component';
 import { SongBasicComponent } from './components/song-basic/song-basic.component';
 import { SongVotingComponent } from './components/song-voting/song-voting.component';
+import { HttpClientModule } from '@angular/common/http'
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(
       appRoutes
-    )
+    ),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
